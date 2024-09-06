@@ -1,1 +1,18 @@
+body {
+    height: 100vh;
+}
 
+div {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title-form {
+    background-image: linear-gradient(to right, #ED9C37 50%, #ED7C37);
+}
+
+
+p {
+    margin: 0;
+}
