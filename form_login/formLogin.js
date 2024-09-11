@@ -1,3 +1,5 @@
+const user = JSON.parse(localStorage.getItem('user'));
+
 function dados() {
     const ds = [
         {
@@ -11,6 +13,10 @@ function dados() {
             login: "Zamengo",
             password: "tuaMaeNoCafeDaTarde",
             email: "gostosa24@gmail.com"
+        },
+        {
+            login: user.name,
+            password: user.password
         }
     ]
     return ds

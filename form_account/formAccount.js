@@ -1,7 +1,3 @@
-
-
-
-
 function getUserData() {
     const inputNameUser = document.getElementById('nameUser').value
     const inputEmail = document.getElementById('email').value
@@ -20,6 +16,8 @@ function getUserData() {
 
 
 function createAccount() {
-    alert(`Oi, ${getUserData().name}`)
+    const user = getUserData()
+    localStorage.setItem('user', JSON.stringify(user));
+    alert('Conta cadastrada')
     window.location.href = '../teste.html'
 }
