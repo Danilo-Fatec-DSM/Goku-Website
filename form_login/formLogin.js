@@ -37,7 +37,7 @@ function login() {
         if (log == usuario[i].login && senha == usuario[i].password) {
             console.log('Você logou')
             alert('Você logou!')
-            window.location.href = '../pages/teste.html'
+            window.location.href = '../teste.html'
         }
     }
     

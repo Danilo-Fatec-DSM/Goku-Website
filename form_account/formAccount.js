@@ -19,5 +19,5 @@ function createAccount() {
     const user = getUserData()
     localStorage.setItem('user', JSON.stringify(user));
     alert('Conta cadastrada')
-    window.location.href = '../pages/formLogin.html'
+    window.location.href = '../form_login/formLogin.html'
 }
