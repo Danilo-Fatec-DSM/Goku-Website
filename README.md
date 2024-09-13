@@ -7,37 +7,10 @@
 
 
 
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Sumário</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">Sobre o Proejeto</a>
-      <ul>
-        <li><a href="#built-with">Construido com</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Começando</a>
-      <ul>
-        <li><a href="#prerequisites">Pré-requisitos</a></li>
-        <li><a href="#installation">Instalação</a></li>
-      </ul>
-    </li>
-    <li><a href="#contributing">Contribuindo</a></li>
-    <li><a href="#license">Licença</a></li>
-  </ol>
-</details>
-
-
-
 <!-- ABOUT THE PROJECT -->
 ## Sobre o Projeto
 
 <!--colocar imagem do site -->
-
-
 
 
 <p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
@@ -96,12 +69,17 @@ Abra uma solicitação de pull
 
 ### Top contribuidores:
 
-<a href="https://github.com/Zamengoo">
-  Eduardo Zamengo
-</a>
 <br>
 <a href="https://github.com/Danilo-Fatec-DSM">
-  Danilo Santos
+  Danilo Santos dos Reis
+</a>
+<br>
+<a href="https://github.com/Zamengoo">
+  Eduardo Zamengo 
+</a>
+<br>
+<a href="https://github.com/juanpablo174">
+  Juan Pablo
 </a>
 
 <p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
