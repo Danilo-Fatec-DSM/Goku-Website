@@ -75,7 +75,7 @@ Abra uma solicitação de pull
 </a>
 <br>
 <a href="https://github.com/Zamengoo">
-  Eduardo Zamengo 
+  Eduardo Zamengo do Nascimento
 </a>
 <br>
 <a href="https://github.com/juanpablo174">
