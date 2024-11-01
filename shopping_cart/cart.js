@@ -17,19 +17,17 @@ let imagemProduto = 0;
 for (let i = 0; i < produtosComprados.length; i++) {
   precoTotal += produtosComprados[i].precoProduto;
   imagemProduto = produtosComprados[i].imagemProduto;
-}
 
-for (let i = 0; i < produtosComprados.length; i++) {
   let containerProduto = document.createElement("div");
-  
+
   let lista = document.createElement("li");
   document.getElementById("produtos").appendChild(lista);
   lista.appendChild(containerProduto);
-  
+
   let img = document.createElement("img");
   img.setAttribute("src", `${imagemProduto}`);
   containerProduto.appendChild(img);
-  
+
   let containerNome = document.createElement("p");
   containerNome.textContent = produtosComprados[i].nomeProduto;
   containerProduto.appendChild(containerNome);
@@ -44,4 +42,3 @@ let total = (document.querySelector(".total").textContent += precoTotal);
 // let imagemProduto = produtosComprados.imagemProduto
 
 // let total = document.querySelector('.total').innerHTML = `<img src="${imagemProduto}">`
-
