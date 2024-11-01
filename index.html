@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
@@ -17,7 +15,7 @@
         <div class="row justify-content-between mt-3">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Produtos</a>
+                    <a class="nav-link" href="#">Produtos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about/about.html">Sobre</a>
@@ -28,85 +26,85 @@
             </ul>
             <div>
                 <button class="btn btn-outline-primary mr-2 my-sm-0" id="button-login" type="submit" onclick="buttonLoginClicked()">Login</button>
-                <button class="btn btn-outline-primary mr-2 my-sm-0" id="button-create-acount" type="submit"  onclick="buttonCreatAccountClicked()">Criar Conta</button>
-                <button class="btn btn-outline-primary mr-2 my-sm-0" id="button-shopping-cart" type="submit"  onclick="buttonShoppingCart()">Carrinho</button>
+                <button class="btn btn-outline-primary mr-2 my-sm-0" id="button-create-acount" type="submit" onclick="buttonCreatAccountClicked()">Criar Conta</button>
+                <button class="btn btn-outline-primary mr-2 my-sm-0" id="button-shopping-cart" type="submit" onclick="buttonShoppingCart()">Carrinho</button>
 
             </div>
         </div>
         <div class="row justify-content-between mt-5">
             <div class="text-center">
-                <img src="imgs/vestuario.webp" alt="">
+                <img src="img/vestuario.webp" alt="">
                 <p class="pt-2">Vestuário</p>
             </div>
             <div class="text-center">
-                <img src="imgs/acessorios.webp" alt="">
+                <img src="img/acessorios.webp" alt="">
                 <p class="pt-2">Acessórios</p>
             </div>
             <div class="text-center">
-                <img src="imgs/casa_e_decoracao.webp" alt="">
+                <img src="img/casa_e_decoracao.webp" alt="">
                 <p class="pt-2">Casa e Decoração</p>
             </div>
             <div class="text-center">
-                <img src="imgs/colecionaveis.webp" alt="">
+                <img src="img/colecionaveis.webp" alt="">
                 <p class="pt-2">Colecionaives</p>
             </div>
         </div>
         <div class="row justify-content-between">
             <div class="card mt-3" style="width: 18rem;">
-                <img class="card-img-top" src="imgs/goku1.png" alt="Imagem de capa do card">
+                <img class="card-img-top" src="img/goku-ssj.png" alt="Imagem de capa do card">
                 <div class="card-body">
                     <h5 class="card-title">Action Figure Goku SSJ</h5>
                     <p class="card-text">Uma Action-Figure do personagem Goku de Dragon Ball em sua forma Super Saiyajin.</p>
                     <h4>R$90,00</h4>
-                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    <button class="btn btn-primary btn-comprar" id="goku" onclick="comprar('../img/goku-ssj.png', 'Action Figure Goku SSJ', 90)">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card mt-3" style="width: 18rem;">
-                <img class="card-img-top" src="imgs/goku2.png" alt="Imagem de capa do card">
+                <img class="card-img-top" src="img/goku-em-cima-da-nuvem.png" alt="Imagem de capa do card">
                 <div class="card-body">
                     <h5 class="card-title">Action Figure Goku Voando Nuvem</h5>
                     <p class="card-text">Uma Action-Figure do personagem Goku de Dragon Ball voando em sua Nuvem.</p>
                     <h4>R$80,00</h4>
-                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    <button class="btn btn-primary btn-comprar" value="" onclick="comprar('../img/goku-em-cima-da-nuvem.png', 'Action Figure Goku Voando Nuvem', 80)">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card mt-3" style="width: 18rem;">
-                <img class="card-img-top" src="imgs/goku3.png" alt="Imagem de capa do card">
+                <img class="card-img-top" src="img/goku-genki-dama.png" alt="Imagem de capa do card">
                 <div class="card-body">
                     <h5 class="card-title">Action Figure Goku Genki Dama</h5>
                     <p class="card-text">Uma Action-Figure do personagem Goku de Dragon Ball fazendo uma Genki Dama. Genki Dama vendida separadamente.</p>
                     <h4>R$100,00</h4>
-                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    <button class="btn btn-primary btn-comprar" value="" onclick="comprar('../img/goku-genki-dama.png', 'Action Figure Goku Genki Dama', 100)">Adicionar ao Carrinho</button>
                 </div>
             </div>
 
         </div>
         <div class="row justify-content-between">
             <div class="card mt-3" style="width: 18rem;">
-                <img class="card-img-top" src="imgs/camisa-dbz1.png" alt="Imagem de capa do card">
+                <img class="card-img-top" src="img/camisa-do-trunks.png" alt="Imagem de capa do card">
                 <div class="card-body">
                     <h5 class="card-title">Camisa Trunks</h5>
                     <p class="card-text">Camisa do Personagem Trunks de Dragon Ball.</p>
                     <h4>R$95,99</h4>
-                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    <button class="btn btn-primary btn-comprar" value="95.99" onclick="comprar('../img/camisa-do-trunks.png','Camisa Trunks', 95.99)">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card mt-3" style="width: 18rem;">
-                <img class="card-img-top" src="imgs/camisa-dbz2.png" alt="Imagem de capa do card">
+                <img class="card-img-top" src="img/camisa-goku-ssj3.png" alt="Imagem de capa do card">
                 <div class="card-body">
                     <h5 class="card-title">Camisa Goku SSJ3</h5>
                     <p class="card-text">Uma camisa do Goku em sua forma Super Saiyajin 3.</p>
                     <h4>R$75,00</h4>
-                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    <button class="btn btn-primary" onclick="comprar('../img/camisa-goku-ssj3.png', 'Camisa Goku SJJ3',75)">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card mt-3" style="width: 18rem;">
-                <img class="card-img-top" src="imgs/camisa-dbz3.png" alt="Imagem de capa do card">
+                <img class="card-img-top" src="img/camisa-do-goku-gohan-goten.png" alt="Imagem de capa do card">
                 <div class="card-body">
                     <h5 class="card-title">Camisa Goku, Gohan e Goten</h5>
                     <p class="card-text">Camisa do Goku, Gohan e Goten soltando um Kamehameha.</p>
                     <h4>R$99,99</h4>
-                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    <button class="btn btn-primary" onclick="comprar('../img/camisa-do-goku-gohan-goten.png', 'Camisa Goku, Gohan e Goten', 99.99)">Adicionar ao Carrinho</button>
                 </div>
             </div>
 
@@ -114,45 +112,39 @@
 
         <div class="row justify-content-between">
             <div class="card mt-3" style="width: 18rem;">
-                <img class="card-img-top" src="imgs/chaveiro.png" alt="Imagem de capa do card">
+                <img class="card-img-top" src="img/chaveiro-picolo.png" alt="Imagem de capa do card">
                 <div class="card-body">
                     <h5 class="card-title">Chaveiro do Piccolo</h5>
                     <p class="card-text">Um chaveiro do personagem Piccolo de Dragon Ball.</p>
                     <h4>R$5,50</h4>
-                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    <button class="btn btn-primary" onclick="comprar('../img/chaveiro-picolo.png', 'Chaveiro do Piccolo',5.50)">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card mt-3" style="width: 18rem;">
-                <img class="card-img-top" src="imgs/Kit-Chaveiros-Dbz.png" alt="Imagem de capa do card">
+                <img class="card-img-top" src="img/Kit-Chaveiros-Dbz.png" alt="Imagem de capa do card">
                 <div class="card-body">
                     <h5 class="card-title">Kit de Chaveiros Dragon Ball</h5>
                     <p class="card-text">Conjunto de chaveiros de Dragon Ball. Contém 8 Unidades.</p>
                     <h4>R$20,00</h4>
-                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    <button class="btn btn-primary" onclick="comprar('../img/Kit-Chaveiros-Dbz.png', 'Kit de Chaveiros Dragon Ball',20)">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card mt-3" style="width: 18rem;">
-                <img class="card-img-top" src="imgs/chaveiro-caro.png" alt="Imagem de capa do card">
+                <img class="card-img-top" src="img/chaveiro-3d-goku.png" alt="Imagem de capa do card">
                 <div class="card-body">
                     <h5 class="card-title">Chaveiro 3D Do Goku</h5>
                     <p class="card-text">Chaveiro do goku em formato 3D com uma faixa escrito Dragon Ball Z.</p>
                     <h4>R$50,00</h4>
-                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    <button class="btn btn-primary" onclick="comprar('../img/chaveiro-3d-goku.png', 'Chaveiro 3D Do Goku',50)">Adicionar ao Carrinho</button>
                 </div>
             </div>
 
         </div>
 
         <script src="app.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 </html>

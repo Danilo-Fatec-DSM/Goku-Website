@@ -1,3 +1,5 @@
+
+
 const buttonLogin = document.querySelector('#button-login')
 const buttonAccount = document.querySelector('#button-create-acount')
 const buttonCart = document.querySelector('#button-shopping-cart')
@@ -15,3 +17,7 @@ function buttonCreatAccountClicked() {
 function buttonShoppingCart() {
     window.location.href = '../shopping_cart/cart.html'
 }
+
+
+
+
