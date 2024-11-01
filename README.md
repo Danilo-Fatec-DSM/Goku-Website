@@ -3,45 +3,22 @@
 
 
 
-<!-- PROJECT SHIELDS -->
-
-
-
 <!-- ABOUT THE PROJECT -->
 ## Sobre o Projeto
 
 <!--colocar imagem do site -->
 
 
-<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
-
-
-
-### Construido com
-
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-
-<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-
-### Instalação
-
-1. Clone o repositório
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-
-5. Alterar url remoto do git para evitar envios acidentais para o projeto base
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirme as alterações
-   ```
-
-<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
-
+## Linguagens e ferramentas
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo"  />
+</div>
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -49,10 +26,10 @@
 - [x] Criar a página inicial
 - [x] Criar a página de Login e Criar Conta
 - [x] Criar a funcionalidade de guardar os dados do usuário ao criar conta
-- [ ] Criar a página do carrinho de compras
-- [ ] Criar a funcionalidade de adicionar o produto no carrinho
+- [x] Criar a página do carrinho de compras
+- [x] Criar a funcionalidade de adicionar o produto no carrinho
+- [ ] Criar a funcionalidade de excluir o item do carrinho
 
-<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contribuindo
@@ -82,7 +59,18 @@ Abra uma solicitação de pull
   Juan Pablo
 </a>
 
-<p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
+### Instalação
+
+Clone o repositório
+   ```sh
+   git clone https://github.com/github_username/repo_name.git
+   ```
+
+Alterar url remoto do git para evitar envios acidentais para o projeto base
+   ```sh
+   git remote set-url origin github_username/repo_name
+   git remote -v # confirme as alterações
+   ```
 
 
 
@@ -90,8 +78,6 @@ Abra uma solicitação de pull
 ## Licença
 
 Distribuído sob a licença GPL. Veja GPL-3.0 license para mais informações.
-
-<p align="right">(<a href="#readme-top">Vontar ao topo</a>)</p>
 
 
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
