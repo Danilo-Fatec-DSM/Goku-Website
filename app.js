@@ -1,3 +1,23 @@
+const defaultUser = {
+  name: "Usuário Padrão",
+  email: "default@user.com",  
+  password: "123456", // Use uma senha segura em produção
+};
+
+// Função para inicializar o usuário padrão
+function initializeDefaultUser() {
+  let users = JSON.parse(localStorage.getItem("users")) || [];
+
+  // Verifica se o usuário padrão já existe
+  const userExists = users.some((user) => user.email === defaultUser.email);
+
+  if (!userExists) {
+    users.push(defaultUser); // Adiciona o usuário padrão apenas se não existir
+    localStorage.setItem("users", JSON.stringify(users));
+  }
+}
+initializeDefaultUser();
+
 const buttonLogin = document.querySelector("#button-login");
 const buttonAccount = document.querySelector("#button-create-acount");
 const buttonCart = document.querySelector("#button-shopping-cart");
