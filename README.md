@@ -60,9 +60,9 @@ Abra uma solicitação de pull
 </a>
 
 ## Usuário de teste
-email: danilo12@gmail.com
+email: default@user.com
 <br>
-senha: 12345
+senha: 123456
 
 ### Instalação
 
