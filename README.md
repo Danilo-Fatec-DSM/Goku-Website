@@ -59,10 +59,11 @@ Abra uma solicitação de pull
   Juan Pablo
 </a>
 
-## Usuário de teste
+## Usuário de teste e Link do Pages
 email: default@user.com
 <br>
 senha: 123456
+https://danilo-fatec-dsm.github.io/Goku-Website/
 
 ### Instalação
 
