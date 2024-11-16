@@ -64,7 +64,7 @@ email: default@user.com
 <br>
 senha: 123456
 <br>
-https://danilo-fatec-dsm.github.io/Goku-Website/
+Pages: https://danilo-fatec-dsm.github.io/Goku-Website/
 
 ### Instalação
 
