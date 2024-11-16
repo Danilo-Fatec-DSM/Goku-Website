@@ -1,4 +1,5 @@
-let produtosComprados = JSON.parse(localStorage.getItem("produtosComprados"));
+let produtosComprados =
+  JSON.parse(sessionStorage.getItem("produtosComprados")) || [];
 
 const buttonLogin = document.querySelector("#button-login");
 const buttonAccount = document.querySelector("#button-create-acount");
@@ -11,34 +12,77 @@ function buttonCreatAccountClicked() {
   window.location.href = "../form_account/formAccount.html";
 }
 
+let form = document.getElementById("formulario");
+
 let precoTotal = 0;
-let imagemProduto = 0;
 
-for (let i = 0; i < produtosComprados.length; i++) {
-  precoTotal += produtosComprados[i].precoProduto;
-  imagemProduto = produtosComprados[i].imagemProduto;
+const containerProdutos = document.querySelector("#produtos");
+// Função para renderizar os produtos
+function renderizarCarrinho() {
+  // Limpar o conteúdo antes de atualizar
+  containerProdutos.innerHTML = "";
+  precoTotal = 0; // Resetando o preço total
 
-  let containerProduto = document.createElement("div");
+  // Construir a lista de produtos
+  produtosComprados.forEach((produto, index) => {
+    precoTotal += produto.precoProduto;
 
-  let lista = document.createElement("li");
-  document.getElementById("produtos").appendChild(lista);
-  lista.appendChild(containerProduto);
-
-  let img = document.createElement("img");
-  img.setAttribute("src", `${imagemProduto}`);
-  containerProduto.appendChild(img);
-
-  let containerNome = document.createElement("p");
-  containerNome.textContent = produtosComprados[i].nomeProduto;
-  containerProduto.appendChild(containerNome);
-
-  let containerPreco = document.createElement("p");
-  containerPreco.textContent = `R$ ${produtosComprados[i].precoProduto}`;
-  containerProduto.appendChild(containerPreco);
+    containerProdutos.innerHTML += `
+       <li>
+        <img src="${produto.imagemProduto}" alt="${produto.nomeProduto}">
+        <p>${produto.nomeProduto}</p>
+        <p>R$ ${produto.precoProduto.toFixed(2)}</p>
+        <button class="buttonDelete" onclick="tirarProdutoDoCarrinho(${index})">Excluir</button>
+      </li>
+    `;
+  });
+  // Exibir o preço total atualizado
+  let total = (document.querySelector(
+    ".total"
+  ).textContent = `R$ ${precoTotal.toFixed(2)}`);
 }
 
-let total = (document.querySelector(".total").textContent += precoTotal);
+// Seleciona as imagens das bandeiras
+const bandeiras = document.querySelectorAll(".bandeira");
+const resultado = document.getElementById("resultado");
 
-// let imagemProduto = produtosComprados.imagemProduto
+// Adiciona um evento de clique para cada imagem de bandeira
+bandeiras.forEach((bandeira) => {
+  bandeira.addEventListener("click", () => {
+    // Remove a classe 'selecionado' de todas as bandeiras
+    bandeiras.forEach((b) => b.classList.remove("selecionado"));
 
-// let total = document.querySelector('.total').innerHTML = `<img src="${imagemProduto}">`
+    // Adiciona a classe 'selecionado' à bandeira clicada
+    bandeira.classList.add("selecionado");
+
+    // Exibe o método de pagamento escolhido
+    if (bandeira.id === "visa") {
+      alert("Método de pagamento escolhido: Visa");
+    } else if (bandeira.id === "mastercard") {
+      alert("Método de pagamento escolhido: MasterCard");
+    } else if (bandeira.id === "pix") {
+      alert("Método de pagamento escolhido: Pix");
+    }
+  });
+});
+
+// Função para tirar o produto do carrinho
+function tirarProdutoDoCarrinho(index) {
+  // Remover o produto do array
+  produtosComprados.splice(index, 1);
+
+  // Atualizar o localStorage
+  sessionStorage.setItem(
+    "produtosComprados",
+    JSON.stringify(produtosComprados)
+  );
+  // Re-renderizar o carrinho com o novo array
+  renderizarCarrinho();
+}
+
+// Inicializar o carrinho ao carregar a página
+document.addEventListener("DOMContentLoaded", renderizarCarrinho);
+
+function pagar() {
+  alert("Pagamento concluido");
+}

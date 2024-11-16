@@ -23,7 +23,39 @@ function comprar(imagemProduto, nomeProduto, precoProduto) {
     nomeProduto: nomeProduto,
     precoProduto: precoProduto,
   };
-  let produtos = JSON.parse(localStorage.getItem("produtosComprados")) || [];
+  
+  let produtos = JSON.parse(sessionStorage.getItem("produtosComprados")) || [];
   produtos.push(produto);
-  localStorage.setItem("produtosComprados", JSON.stringify(produtos));
+  sessionStorage.setItem("produtosComprados", JSON.stringify(produtos));
 }
+
+// Função para excluir o último usuário
+function deleteLastUser() {
+  // Obtém a lista de usuários do localStorage
+  let users = JSON.parse(localStorage.getItem("users"));
+
+  // Verifica se há usuários no localStorage
+  if (users && users.length > 0) {
+    // Se houver mais de um usuário, pode excluir o último
+    if (users.length > 1) {
+      users.pop(); // Remove o último usuário da lista
+    } else {
+      // Se houver apenas 1 usuário, não faz nada
+      alert("Não há usuários para excluir.");
+      return;
+    }
+
+    // Atualiza o localStorage com a lista de usuários modificada
+    localStorage.setItem("users", JSON.stringify(users));
+
+    // Mensagem de sucesso
+    alert("Usuário excluído!");
+  } else {
+    // Caso não haja usuários
+    alert("Não há usuários para excluir.");
+  }
+}
+
+
+// Adiciona o evento de clique ao botão "Excluir Último Usuário"
+document.getElementById("deleteLastUser").addEventListener("click", deleteLastUser);

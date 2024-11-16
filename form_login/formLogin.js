@@ -13,3 +13,24 @@ function login() {
     }
   }
 }
+
+function garantirUsuarioDanilo() {
+  // Obtém a lista de usuários do localStorage
+  const usuarios = JSON.parse(localStorage.getItem("users")) || [];
+
+  // Verifica se o usuário Danilo já está cadastrado
+  const daniloExistente = usuarios.find(user => user.email === "danilo12@gmail.com");
+
+  if (!daniloExistente) {
+    // Se o usuário Danilo não estiver no localStorage, cria e adiciona ele
+    usuarios.push({
+      name: "Danilo",
+      email: "danilo12@gmail.com",
+      password: "12345"
+    });
+
+    // Salva a lista atualizada de usuários no localStorage
+    localStorage.setItem("users", JSON.stringify(usuarios));
+  }
+}
+garantirUsuarioDanilo()

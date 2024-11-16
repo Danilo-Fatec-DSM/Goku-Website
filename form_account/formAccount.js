@@ -26,5 +26,4 @@ function createAccount() {
   localStorage.setItem("users", JSON.stringify(users));
 
   window.location.href = '../form_login/formLogin.html'
-
 }
