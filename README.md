@@ -59,6 +59,9 @@ Abra uma solicitação de pull
   Juan Pablo
 </a>
 
+## Usuuário de teste
+email: danilo12@gmail.com
+senha: 12345
 ### Instalação
 
 Clone o repositório
